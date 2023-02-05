@@ -2,9 +2,11 @@
 import "./style.css";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks.vue";
+import AddTask from "./components/AddTask.vue";
 </script>
 <template>
   <Header title="Task Tracker" />
+  <AddTask />
   <Tasks
     @delete-task="deleteTask"
     @toggle-reminder="toggleReminder"
@@ -18,6 +20,7 @@ export default {
   components: {
     Header,
     Tasks,
+    AddTask,
   },
   data() {
     return { tasks: [] };
