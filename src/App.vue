@@ -5,10 +5,8 @@ import Tasks from "./components/Tasks.vue";
 import AddTask from "./components/AddTask.vue";
 </script>
 <template>
-<<<<<<< HEAD
   <Header title="Task Tracker" />
   <AddTask />
-=======
   <Header
     @toggle-task="toggleTask"
     title="Task Tracker"
@@ -17,7 +15,6 @@ import AddTask from "./components/AddTask.vue";
   <div v-if="showAddTask">
     <AddTask @add-Task="addTask" />
   </div>
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
   <Tasks
     @delete-task="deleteTask"
     @toggle-reminder="toggleReminder"
@@ -34,15 +31,6 @@ export default {
     AddTask,
   },
   data() {
-<<<<<<< HEAD
-    return { tasks: [] };
-  },
-  methods: {
-    deleteTask(id) {
-      this.tasks = this.tasks.filter((task) => {
-        return task.id !== id;
-      });
-=======
     return { tasks: [], showAddTask: false };
   },
   methods: {
@@ -82,7 +70,6 @@ export default {
           }))
         : alert("ERROR 404");
 
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
       Swal.fire({
         position: "top-end",
         icon: "success",
@@ -98,35 +85,6 @@ export default {
         },
       });
     },
-<<<<<<< HEAD
-    toggleReminder(id) {
-      this.tasks = this.tasks.map((task) => {
-        return task.id === id ? { ...task, reminder: !task.reminder } : task;
-      });
-    },
-  },
-  created() {
-    this.tasks = [
-      {
-        id: 1,
-        text: "Learning VueJS From Scratch",
-        day: "10/10/2023",
-        reminder: false,
-      },
-      {
-        id: 2,
-        text: "Applying What We Learn In Mini Projects",
-        day: "15/10/2023",
-        reminder: false,
-      },
-      {
-        id: 3,
-        text: "Creating a Project Like An E-commerce Website or StockManagement Website",
-        day: "20/10/2023",
-        reminder: false,
-      },
-    ];
-=======
     async toggleReminder(id) {
       const taskToggle = await this.fetchTask(id);
       const updateTask = { ...taskToggle, reminder: !taskToggle.reminder };
@@ -159,7 +117,6 @@ export default {
   },
   async created() {
     this.tasks = await this.fetchTasks();
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
   },
 };
 </script>

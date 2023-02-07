@@ -11,10 +11,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
-<<<<<<< HEAD
-=======
     "vue-router": "^4.0.13",
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
     "vue-toasted": "^1.1.28"
   },
   "devDependencies": {

@@ -11,15 +11,11 @@
         <div
           class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center"
         >
-<<<<<<< HEAD
-          <Button action="add task" />
-=======
           <Button
             :action="showAddTask ? 'Close' : 'Add Task'"
             @toggle-task="$emit('toggle-Task')"
             :class="showAddTask ? 'bg-red-600' : 'bg-blue-600'"
           />
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
         </div>
       </div>
     </div>
@@ -32,10 +28,7 @@ export default {
   name: "Header",
   props: {
     title: String,
-<<<<<<< HEAD
-=======
     showAddTask: Boolean,
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
   },
   components: {
     Button,

@@ -60,13 +60,8 @@
         </div>
       </div>
 
-<<<<<<< HEAD
-      <div class="flex items-center justify-start">
-        <div class="flex items-center">
-=======
       <div class="flex items-center justify-between">
         <div>
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
           <input
             id="link-checkbox"
             type="checkbox"
@@ -79,15 +74,12 @@
             >Set Reminder
           </label>
         </div>
-<<<<<<< HEAD
-=======
         <input
           type="submit"
           name="submit"
           id="submit"
           class="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500"
         />
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
       </div>
     </form>
   </div>
@@ -98,15 +90,9 @@ export default {
   name: "AddTask",
   data() {
     return {
-<<<<<<< HEAD
-      taskText: "",
-      reminder: false,
-      date: "",
-=======
       text: "",
       day: "",
       reminder: false,
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
     };
   },
   methods: {
@@ -118,13 +104,6 @@ export default {
       }
 
       const newTask = {
-<<<<<<< HEAD
-        id: Math.floor(Math.random() * 100000),
-        taskText: this.taskText,
-        date: this.date,
-        reminder: this.reminder,
-      };
-=======
         // id: Math.floor(Math.random() * 100000),
         text: this.taskText,
         day: this.date,
@@ -132,7 +111,6 @@ export default {
       };
 
       this.$emit("add-Task", newTask);
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
     },
   },
 };

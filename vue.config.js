@@ -2,8 +2,6 @@ const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
   transpileDependencies: true,
 });
-<<<<<<< HEAD
-=======
 
 module.exports = {
   devServer: {
@@ -17,4 +15,3 @@ module.exports = {
     },
   },
 };
->>>>>>> 3cf7662 (Changing the whole app to A crud app with json-server)
