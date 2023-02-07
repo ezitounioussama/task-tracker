@@ -5,8 +5,6 @@ import Tasks from "./components/Tasks.vue";
 import AddTask from "./components/AddTask.vue";
 </script>
 <template>
-  <Header title="Task Tracker" />
-  <AddTask />
   <Header
     @toggle-task="toggleTask"
     title="Task Tracker"
