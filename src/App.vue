@@ -3,6 +3,7 @@ import "./style.css";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks.vue";
 import AddTask from "./components/AddTask.vue";
+import Footer from "./components/Footer.vue";
 </script>
 <template>
   <Header
@@ -18,6 +19,7 @@ import AddTask from "./components/AddTask.vue";
     @toggle-reminder="toggleReminder"
     :tasks="tasks"
   />
+  <Footer />
 </template>
 
 <script>
@@ -27,6 +29,7 @@ export default {
     Header,
     Tasks,
     AddTask,
+    Footer,
   },
   data() {
     return { tasks: [], showAddTask: false };
