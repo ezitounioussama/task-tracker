@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Learning VueJS From Scratch",
+      "day": "10/10/2023",
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "text": "Applying What We Learn In Mini Projects",
+      "day": "15/10/2023",
+      "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "Creating a Project Like An E-commerce Website or StockManagement Website",
+      "day": "20/10/2023",
+      "reminder": false
+    }
+  ]
+}

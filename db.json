@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "text": "Working with the crud with json Server ",
+      "day": "22:39 Feb 07",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "Something wrong ?",
+      "day": "23:03 Feb 07",
+      "reminder": false,
+      "id": 2
+    }
+  ]
+}
