@@ -12,9 +12,10 @@
           class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center"
         >
           <Button
+            v-show="homePage"
+            :class="showAddTask ? 'bg-red-600' : 'bg-blue-600'"
             :action="showAddTask ? 'Close' : 'Add Task'"
             @toggle-task="$emit('toggle-Task')"
-            :class="showAddTask ? 'bg-red-600' : 'bg-blue-600'"
           />
         </div>
       </div>
@@ -32,6 +33,15 @@ export default {
   },
   components: {
     Button,
+  },
+  computed: {
+    homePage() {
+      if (this.$route.path === "/") {
+        return true;
+      } else {
+        return false;
+      }
+    },
   },
 };
 </script>

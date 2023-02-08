@@ -1,10 +1,28 @@
 {
   "tasks": [
     {
-      "text": "Working with the crud with json Server ",
-      "day": "22:39 Feb 07",
+      "text": "Add tasks and save them to the server",
+      "day": "22:50 Feb 07 ",
       "reminder": true,
       "id": 1
+    },
+    {
+      "text": "Double Click to Set reminder Or Disabe it",
+      "day": "22:58 Feb 07 ",
+      "reminder": false,
+      "id": 2
+    },
+    {
+      "text": "Workin with Routers and Routes",
+      "day": "09:10 Feb 08",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "Everything Works Succesfully !!",
+      "day": "20:34 Feb 8",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
